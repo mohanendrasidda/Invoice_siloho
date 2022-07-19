@@ -15,11 +15,11 @@ th {
 .center{
     display: flex;
     align-items: center;
+    margin-left: 50%;
 }
-/* .top .right{
-    display: flex;
-    align-items: center;
-} */
+.right {
+    padding-right: 5%;
+}
 
 table{
     border-collapse: collapse;
@@ -30,13 +30,13 @@ tr:nth-child(even){
 }
 
 .blank_row_1{
-    height:3em;
+    height:2.5em;
     background-color: #FFFF;
 }
 
 .blank_row_2{
-    height:3em;
-    background-color: rgb(32, 5, 5);
+    height:2.5em;
+    background-color: rgb(243, 243, 243)
 }
 
 .divider hr{
@@ -52,3 +52,9 @@ tr:nth-child(even){
     color: rgb(230, 72, 151);
     font-size: large;
 }
+
+hr{
+    background-color: rgb(243, 243, 243)
+}
+
+.top .right h1 {margin: auto;margin-bottom: 1.25rem;}
