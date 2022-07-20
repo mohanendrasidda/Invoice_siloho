@@ -4,7 +4,7 @@ body{
 
 .middle, .top{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -22,11 +22,29 @@ th {
     margin-left: 50%;
 }
 .right {
-    padding-right: 5%;
+    float: left;
+    width: 35%;
+    background-color: #fff;
 }
+
+#invoice_heading{
+    float: right;
+    width: 100%;
+    text-align: right;
+    font-weight: 100;
+}
+#submitted{
+    float: right;
+    text-align: center;
+}
+
 
 table{
     border-collapse: collapse;
+    
+}
+tr{
+    padding-right: 0%;
 }
 
 tr:nth-child(even){
@@ -62,3 +80,47 @@ hr{
 }
 
 .top .right h1 {margin: auto;margin-bottom: 1.25rem;}
+
+
+@media only screen and (max-width: 280px){
+    .middle{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+    }  
+
+    .top .left{
+        align-self: flex-start
+    }
+table{
+    width: 100%;
+}
+table th:first-child{
+    width:60%
+}
+table th{
+    width:13%;
+}
+}
+
+@media only screen and (max-width: 600px){
+    .middle{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    table{
+        width: 100%;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .top .left{
+        align-self: flex-start
+    }
+}
