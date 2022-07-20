@@ -23,15 +23,13 @@ th {
 }
 .right {
     float: left;
-    width: 35%;
-    background-color: #fff;
+    padding-right: 5%;
 }
 
 #invoice_heading{
     float: right;
     width: 100%;
     text-align: right;
-    font-weight: 100;
 }
 #submitted{
     float: right;
@@ -70,9 +68,9 @@ tr:nth-child(even){
 
 .last{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     color: rgb(230, 72, 151);
-    font-size: large;
+    font-size: 30px
 }
 
 hr{
